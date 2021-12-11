@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-12-11T19:27:23+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">keep going</title><subtitle>java와 spring, 웹부터 백엔드까지 기초를 탄탄히 공부하기 위한 블로그</subtitle><author><name>Your Name</name></author><entry><title type="html">Testposting</title><link href="http://localhost:4000/TestPosting/" rel="alternate" type="text/html" title="Testposting" /><published>2021-12-11T00:00:00+09:00</published><updated>2021-12-11T00:00:00+09:00</updated><id>http://localhost:4000/TestPosting</id><content type="html" xml:base="http://localhost:4000/TestPosting/">&lt;h2 id=&quot;2021-12-11-testpostingmd&quot;&gt;2021-12-11-TestPosting.md&lt;/h2&gt;
+&lt;p&gt;title: “블로그 시작” 
+excerpt: “첫 포스팅 “ 
+last_modified_at: 
+categories:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Blog 
+tags:&lt;/li&gt;
+  &lt;li&gt;content&lt;/li&gt;
+  &lt;li&gt;Blog 
+ —&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;포스팅-테스트&quot;&gt;포스팅 테스트&lt;/h1&gt;</content><author><name>Your Name</name></author><summary type="html">2021-12-11-TestPosting.md title: “블로그 시작” excerpt: “첫 포스팅 “ last_modified_at: categories: Blog tags: content Blog —</summary></entry></feed>
