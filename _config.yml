@@ -289,3 +289,7 @@ defaults:
       comments: # true
       share: true
       related: true
+      
+      #side bar
+sidebar:
+  nav: "docs"
