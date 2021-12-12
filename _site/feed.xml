@@ -1,23 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-12-12T13:51:32+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">keep going</title><subtitle>java와 spring, 웹부터 백엔드까지 기초를 탄탄히 공부하기 위한 블로그</subtitle><author><name>Your Name</name></author><entry><title type="html"></title><link href="http://localhost:4000/2021-12-12-OOPch4/" rel="alternate" type="text/html" title="" /><published>2021-12-12T13:51:32+09:00</published><updated>2021-12-12T13:51:32+09:00</updated><id>http://localhost:4000/2021-12-12-OOPch4</id><content type="html" xml:base="http://localhost:4000/2021-12-12-OOPch4/">&lt;h3 id=&quot;this-키워드&quot;&gt;&lt;strong&gt;this 키워드&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;: 객체가 자기 자신을 지칭할 때 쓰는 키워드&lt;br /&gt;
-- 객체 변수와 지역 변수 이름이 같을 때 객체 변수를 지칭하기 위한 키워드. (this.객체변수명)&lt;br /&gt;
-- 정적 변수와 지역 변수 이름이 같을 때 정적 변수에 접근하기 위해서는 클래스명을 이용한다. (클래스명.정적변수명)&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&quot;super-키워드&quot;&gt;&lt;strong&gt;super 키워드&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;: 바로 위 상위 클래스의 인스턴스를 지칭&lt;/p&gt;</content><author><name>Your Name</name></author></entry><entry><title type="html">Oopch1</title><link href="http://localhost:4000/OOPch1/" rel="alternate" type="text/html" title="Oopch1" /><published>2021-12-12T00:00:00+09:00</published><updated>2021-12-12T00:00:00+09:00</updated><id>http://localhost:4000/OOPch1</id><content type="html" xml:base="http://localhost:4000/OOPch1/">&lt;hr /&gt;
-&lt;p&gt;title: “스프링을 위한 자바 객체지향 CH1” 
-excerpt: “” 
-last_modified_at: 
-categories:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;OOP 
-tags:&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-&lt;h1 id=&quot;스프링을-위한-자바-객체지향&quot;&gt;스프링을 위한 자바 객체지향&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-12-12T13:58:48+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">keep going</title><subtitle>java와 spring, 웹부터 백엔드까지 기초를 탄탄히 공부하기 위한 블로그</subtitle><author><name>Your Name</name></author><entry><title type="html">Oopch1</title><link href="http://localhost:4000/OOPch1/" rel="alternate" type="text/html" title="Oopch1" /><published>2021-12-12T00:00:00+09:00</published><updated>2021-12-12T00:00:00+09:00</updated><id>http://localhost:4000/OOPch1</id><content type="html" xml:base="http://localhost:4000/OOPch1/">&lt;h1 id=&quot;스프링을-위한-자바-객체지향&quot;&gt;스프링을 위한 자바 객체지향&lt;/h1&gt;
 
 &lt;h2 id=&quot;객체지향의-출현-과정&quot;&gt;객체지향의 출현 과정&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;기계어&lt;/strong&gt;&lt;/p&gt;
@@ -119,18 +100,7 @@ Use Anywhere : 모든 컴퓨터에서 실행 가능&lt;/p&gt;
 CBD(Component Based Development)나 SOA(Service Oriented Architecture)와 같은 방법론, 사상과 달리 자바나 C#같은 제품은 제조사가 생각하는 객체지향 방법론의 사상 및 개념이숨어들어 있다. 객체 지향은 긴 세월 속에 정제되어 거의 모든 이가 동의하는 &lt;strong&gt;객체 지향 4대 특성, 객체 지향 설계 5원칙, 객체 지향의 베스트 프랙티스 모음인 디자인 패턴&lt;/strong&gt; 등의 개념이 정립됐다. 우리가 자바라고 하는 제품을, C#이라고 하는 제품을 온전히 쓰려면 제품 속에 녹아 있는 객체 지향 4대 특성은 제대로 이해해야 한다.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;강력한 스프링 프레임워크&lt;/strong&gt;&lt;br /&gt;
-스프링 프레임워크는 개념을 명확히 알지 못해서, 혹은 너무 방대해서 어렵다고 느껴질 수 있다. 스프링 프레임워크를 이해하려면 그 개념인 OOP를 알아야한다. 또한 방대하지만 일관성 있는 방식으로 쌓아올린 제품이므로 단순하고 유연하며 쉽고 강력하다.&lt;/p&gt;</content><author><name>Your Name</name></author><summary type="html">title: “스프링을 위한 자바 객체지향 CH1” excerpt: “” last_modified_at: categories: OOP tags:</summary></entry><entry><title type="html">Oopch2</title><link href="http://localhost:4000/OOPch2/" rel="alternate" type="text/html" title="Oopch2" /><published>2021-12-12T00:00:00+09:00</published><updated>2021-12-12T00:00:00+09:00</updated><id>http://localhost:4000/OOPch2</id><content type="html" xml:base="http://localhost:4000/OOPch2/">&lt;hr /&gt;
-&lt;p&gt;title: “스프링을 위한 자바 객체지향 CH2” 
-excerpt: “” 
-last_modified_at: 
-categories:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;OOP 
-tags:&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-&lt;h1 id=&quot;2자바와-절차적구조적프로그래밍&quot;&gt;&lt;strong&gt;2.자바와 절차적/구조적프로그래밍&lt;/strong&gt;&lt;/h1&gt;
+스프링 프레임워크는 개념을 명확히 알지 못해서, 혹은 너무 방대해서 어렵다고 느껴질 수 있다. 스프링 프레임워크를 이해하려면 그 개념인 OOP를 알아야한다. 또한 방대하지만 일관성 있는 방식으로 쌓아올린 제품이므로 단순하고 유연하며 쉽고 강력하다.&lt;/p&gt;</content><author><name>Your Name</name></author><summary type="html">스프링을 위한 자바 객체지향</summary></entry><entry><title type="html">Oopch2</title><link href="http://localhost:4000/OOPch2/" rel="alternate" type="text/html" title="Oopch2" /><published>2021-12-12T00:00:00+09:00</published><updated>2021-12-12T00:00:00+09:00</updated><id>http://localhost:4000/OOPch2</id><content type="html" xml:base="http://localhost:4000/OOPch2/">&lt;h1 id=&quot;2자바와-절차적구조적프로그래밍&quot;&gt;&lt;strong&gt;2.자바와 절차적/구조적프로그래밍&lt;/strong&gt;&lt;/h1&gt;
 
 &lt;h3 id=&quot;자바-프로그램의-개발과-구동&quot;&gt;&lt;strong&gt;자바 프로그램의 개발과 구동&lt;/strong&gt;&lt;/h3&gt;
 &lt;p&gt;|현실세계|자바세계||&lt;br /&gt;
@@ -172,7 +142,7 @@ tags:&lt;/li&gt;
     &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;&lt;img src=&quot;_Tmemory.jpeg&quot; alt=&quot;_Tmemory&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;./_Tmemory.jpeg&quot; alt=&quot;_Tmemory&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;메서드 실행되기까지의 과정&lt;/strong&gt;&lt;br /&gt;
 &amp;gt; JRE는 프로그램이 실행된느 시작점인 main()메서드가 있는지 확인&lt;br /&gt;
@@ -320,18 +290,7 @@ square()메서드 스택 프레임에는 반환값을 저장할 변수 공간이
   &lt;li&gt;따라서 프로그래머는 절차적/구조적 프로그래밍 기법도 잘 알고 있어야 한다.&lt;/li&gt;
   &lt;li&gt;구조적 프로그래밍의 특징은 함수인데 객체 지향 프로그래머도 메서드 작성에 대한 지혜를 구조적 프로그래밍에서 배워 와야 한다.&lt;/li&gt;
   &lt;li&gt;메서드를 만들 때 순서도나 의사코드를 작성하는 것이 좋다.(NS 다이어그램도 좋은 방법)&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Your Name</name></author><summary type="html">title: “스프링을 위한 자바 객체지향 CH2” excerpt: “” last_modified_at: categories: OOP tags:</summary></entry><entry><title type="html">Oopch3</title><link href="http://localhost:4000/OOPch3/" rel="alternate" type="text/html" title="Oopch3" /><published>2021-12-12T00:00:00+09:00</published><updated>2021-12-12T00:00:00+09:00</updated><id>http://localhost:4000/OOPch3</id><content type="html" xml:base="http://localhost:4000/OOPch3/">&lt;hr /&gt;
-&lt;p&gt;title: “스프링을 위한 자바 객체지향 CH3” 
-excerpt: “” 
-last_modified_at: 
-categories:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;OOP 
-tags:&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-&lt;h1 id=&quot;3장-자바와-객체지향&quot;&gt;3장. 자바와 객체지향&lt;/h1&gt;
+&lt;/ul&gt;</content><author><name>Your Name</name></author><summary type="html">2.자바와 절차적/구조적프로그래밍</summary></entry><entry><title type="html">Oopch3</title><link href="http://localhost:4000/OOPch3/" rel="alternate" type="text/html" title="Oopch3" /><published>2021-12-12T00:00:00+09:00</published><updated>2021-12-12T00:00:00+09:00</updated><id>http://localhost:4000/OOPch3</id><content type="html" xml:base="http://localhost:4000/OOPch3/">&lt;h1 id=&quot;3장-자바와-객체지향&quot;&gt;3장. 자바와 객체지향&lt;/h1&gt;
 &lt;h3 id=&quot;객체-지향은-인간-지향이다&quot;&gt;&lt;strong&gt;객체 지향은 인간 지향이다&lt;/strong&gt;&lt;/h3&gt;
 &lt;ul&gt;
   &lt;li&gt;어셈블리어 &amp;gt; c &amp;gt; c++ &amp;gt; java 로 언어가 로우레벨에서 하이레벨로 발전한 것은 인간을 배려하기 위한 과정이다.&lt;/li&gt;
@@ -566,7 +525,160 @@ public class Driverp{
 
 -------  
 참고자료 : 김종민 저서 &quot;스프링 입문을 위한 자바 객체 지향의 원리와 이해&quot;
-&lt;/정적&gt;&lt;/변수&gt;</content><author><name>Your Name</name></author><summary type="html">title: “스프링을 위한 자바 객체지향 CH3” excerpt: “” last_modified_at: categories: OOP tags:</summary></entry><entry><title type="html">Testposting</title><link href="http://localhost:4000/TestPosting/" rel="alternate" type="text/html" title="Testposting" /><published>2021-12-11T00:00:00+09:00</published><updated>2021-12-11T00:00:00+09:00</updated><id>http://localhost:4000/TestPosting</id><content type="html" xml:base="http://localhost:4000/TestPosting/">2021-12-11-TestPosting.md
+&lt;/정적&gt;&lt;/변수&gt;</content><author><name>Your Name</name></author><summary type="html">3장. 자바와 객체지향 객체 지향은 인간 지향이다 어셈블리어 &amp;gt; c &amp;gt; c++ &amp;gt; java 로 언어가 로우레벨에서 하이레벨로 발전한 것은 인간을 배려하기 위한 과정이다. 절차적/구조적 프로그래밍은 특히 포인터가 인간이 이해하기 힘든 부분이다. 인간이 쉽게 개발할 수 있도록 기계 종속적 개발에서 벗어나 현실세계 처럼 프로그래밍하자라는 생각에서 객체지향이 시작된다. 함수는 코드를 논리적인 단위로 구분하고 분할해서 정복하기 위함으로 만들어 졌다면, 객체지향은 우리가 주변에서 사물을 인지하는 방식대로 프로그래밍하자는 것에서 출발한다. 사물은 1.객체이며 2.고유하고 3.속성을 가지고 4.행위를 한다. 인간의 인지법은 사물을 분류(class)해서 이해한다. 객체지향 이전에는 속성과 메서드를 객체 단위로 묶지 않고 속성, 메서드 따로 분리했다. 객체 지향에서는 우리가 주변에서 실제 사물을 인지 및 사고하는 방식대로 객체 단위의 프로그래밍이 가능하다.</summary></entry><entry><title type="html">Oopch4</title><link href="http://localhost:4000/OOPch4/" rel="alternate" type="text/html" title="Oopch4" /><published>2021-12-12T00:00:00+09:00</published><updated>2021-12-12T00:00:00+09:00</updated><id>http://localhost:4000/OOPch4</id><content type="html" xml:base="http://localhost:4000/OOPch4/">&lt;h1 id=&quot;4장-자바가-확장한-객체-지향&quot;&gt;4장. 자바가 확장한 객체 지향&lt;/h1&gt;
+
+&lt;h3 id=&quot;abstract-키워드---추상-메서드와-추상-클래스&quot;&gt;&lt;strong&gt;abstract 키워드 - 추상 메서드와 추상 클래스&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;추상 메서드 : 선언부는 있는데 구현부가 없는 메서드&lt;br /&gt;
+-추상메서드를 하나라도 갖고 있는 클래스는 반드시 추상 클래스로 선언해야 한다.&lt;br /&gt;
+-추상 메서드 없이도 추상 클래스를 선언할 수는 있다.&lt;br /&gt;
+-추상 클래스는 인스턴스, 즉 객체를 만들 수 없는 클래스가 된다.&lt;br /&gt;
+-하위 클래스가 추상메서드를 오버라이딩 하지 않으면 오류가 발생한다.&lt;br /&gt;
+(상위타입의 참조 변수를 통해 하위 클래스의 인스턴스가 메서드 호출을 하도록 했다면 상위 클래스의 메서드는 반드시 존재해야 한다. 하지만 상위 클래스는 분류의 의미를 갖고 개체의 의미를 갖고 있지 않다면 메서드에 기능을 부여하는 것이 자연스럽지 않다. 이럴 경우에 메서드 선언은 있으되 몸체는 없는 형태로 메서드를 구현하는 것이 추상메서드이다.)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;생성자&quot;&gt;&lt;strong&gt;생성자&lt;/strong&gt;&lt;/h3&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;클래스명 객체명 = new 클래스명();  
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;다음과 같이 인스턴스를 생성할 때, ‘클래스명()’ 도 메서드이다.&lt;/li&gt;
+  &lt;li&gt;반환값이 없고 클래스명과 같은 이름을 가진 메서드를 객체를 생성하는 메서드라고 한다. &lt;strong&gt;(객체 생성자 메서드)&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;필요하다면 인자를 갖는 생성자를 더 만들 수도 있다.&lt;/li&gt;
+  &lt;li&gt;개발자가 아무런 생성자도 만들지 않으면 자바는 인자가 없는 기본 생성자를 자동으로 만들어준다.&lt;/li&gt;
+  &lt;li&gt;인자가 있는 생성자를 하나라도 만든다면 자바는 개본 생성자를 만들어 주지 않는다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;클래스-생성-시의-실행-블록-static-블록&quot;&gt;&lt;strong&gt;클래스 생성 시의 실행 블록, static 블록&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;클래스 생성자는 존재하지 않지만 &lt;strong&gt;클래스가 스태틱 영역에 배치될 때 실행되는 코드블럭&lt;/strong&gt;이 있다. static 블록이다.&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;package&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;staticBlock&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;동물&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;             &lt;span class=&quot;c1&quot;&gt;//static 블록&lt;/span&gt;
+        &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;동물 클래스 레디 온!&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;static 블록이=&quot;&quot; 있는=&quot;&quot; 동물=&quot;&quot; 클래스=&quot;&quot;&gt;
+
+~~~java  
+package staticBlock;
+
+public class Driver01{
+    public static void main(String[] args){
+        동물 펭귄 = new 동물();
+    }
+}
+~~~  
+&amp;gt; 실행 :  
+동물 클래스 레디 온!  
+
+
+~~~java  
+package staticBlock;
+
+public class Driver02{
+    public static void main(String[] args){
+        System.out.println(&quot;main 메서드 시작&quot;);
+    }
+}
+~~~  
+&amp;gt; 실행 :  
+main 메서드 시작  
+
+&amp;gt;: &quot;동물 클래스 레디 온!&quot;이 실행되지 않는 이유는 동물 클래스를 사용하는 코드가 없기에 동물 클래스의 static 블록을 실행하지 않는다. 해당 패키지 또는 클래스가 처음으로 사용될 때 메모리에 로딩 된다. (동물 클래스는 T메모리 스태틱 영역에 자리 잡지도 않는다.)  
+또한 static 블록에서 사용할 수 있는 속성과 메서드는 당연히 static 멤버 뿐이다. (객체 멤버는 클래스가 static 영역에 자리 잡은 후에 객체 생성자를 통해 힙에 생성)  
+
+~~~java  
+package staticBlock;
+
+public class Driver03[
+    public static void main(String[] args){
+        System.out.println(&quot;main 메서드 시작&quot;);
+        동물 펭귄 = new 동물();
+    }
+]
+~~~  
+&amp;gt; 실행 :   
+main 메서드 시작  
+동물 클래스 레디 온!  
+
+&amp;gt; : 동물 클래스 static 블록보다 main() 메서드 실행문이 먼저 실행된다.  
+
+~~~java  
+package static Block;
+
+public class Driver04{
+    public static void main(String[] args){
+        System.out.println(&quot;main 메서드 시작&quot;);
+        동물 펭귄 = new 동물();
+        동물 토끼 = new 동물();
+    }
+}
+~~~  
+&amp;gt; 실행 :   
+main 메서드 시작  
+동물 클래스 레디 온!  
+
+&amp;gt; : 동물 클래스의 인스턴스 여러 개 만들어도 동물 클래스의 static 블록은 단 한 번만 실행된다.  
+
+
+- 클래스 정보는 해당 클래스가 코드에서 맨 처음 사용될 때 메모리의 스태틱 영역에 로딩된다.  
+- 단 한번 해당 클래스의 static 블록이 실행된다.  
+- 클래스가 제일 처음 사용될 때는  
+\- 클래스의 정적 속성을 사용할 때  
+\- 클래스의 정적 메서드를 사용할 때  
+\- 클래스의 인스턴스를 최초로 만들 때  
+
+
+-----
+
+### **final 키워드**  
+- final 키워드가 나타날 수 있는 곳 : 클래스, 변수, 메서드  
+- **final 클래스** 의미 : 상속을 허락하지 않겠다.  
+- **final 변수** 의미 : 변경 불가능한 상수. (선인 시에, 또는 정적 생성자에 해당하는 static 블록 내부에서 초기화)  
+- **final 메소드** 의미 : 오버라이딩 금지  
+
+----------
+
+### **instanceof 연산자**  
+: 만들어진 객체가 특정 클래스의 인스턴스인지 물어보는 연산자.
+~~~java  
+객체참조변수 instanceof 클래스명
+~~~ 
+&amp;gt; 결과로 true 또는 false 반납  
+
+- 객체 참조 변수의 타입이 아닌 실제 객체의 타입에 의해 처리한다.  
+- 클래스들의 상속 관계 뿐만 아니라 인터페이스의 구현 관계에서도 동이랗게 적용된다.  
+
+-----
+
+### **package 키워드**  
+: 네임스페이스(이름공간)를 만들어주는 역할  
+
+-----  
+
+### **interface 키워드와 implements 키워드**  
+\- 인터페이스는 public 추상 메서드와 public 정적 상수만 가질 수 있다.  
+\- 따로 메서드에 public과 abstract, 속성에 public과 static 그리고 final을 붙이지 않아도 자동으로 자바가 알아서 붙여준다.  
+\- 자바8은 람다로 인해 큰 변화를 맞이하였고 인터페이스도 디폴트 메서드 (객체 추상 메서드, 정적 추상 메서드)를 지원.  
+
+---  
+
+### **this 키워드**  
+: 객체가 자기 자신을 지칭할 때 쓰는 키워드  
+\- 객체 변수와 지역 변수 이름이 같을 때 객체 변수를 지칭하기 위한 키워드. (this.객체변수명)  
+\- 정적 변수와 지역 변수 이름이 같을 때 정적 변수에 접근하기 위해서는 클래스명을 이용한다. (클래스명.정적변수명)  
+
+---  
+
+### **super 키워드**  
+: 바로 위 상위 클래스의 인스턴스를 지칭  
+&lt;/static&gt;</content><author><name>Your Name</name></author><summary type="html">4장. 자바가 확장한 객체 지향</summary></entry><entry><title type="html">Testposting</title><link href="http://localhost:4000/TestPosting/" rel="alternate" type="text/html" title="Testposting" /><published>2021-12-11T00:00:00+09:00</published><updated>2021-12-11T00:00:00+09:00</updated><id>http://localhost:4000/TestPosting</id><content type="html" xml:base="http://localhost:4000/TestPosting/">2021-12-11-TestPosting.md
 --- 
 title: &quot;블로그 시작&quot; 
 excerpt: &quot;첫 포스팅 &quot; 
