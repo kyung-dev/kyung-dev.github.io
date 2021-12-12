@@ -4,10 +4,12 @@ title: "블로그 시작"
 excerpt: "첫 포스팅 " 
 last_modified_at: 
 categories:
- - Blog 
+ - test 
 tags:
  - content
  - Blog 
+ sidebar:
+    nav: "docs"
  ---
 
 # 포스팅 테스트
