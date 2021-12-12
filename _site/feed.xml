@@ -1,14 +1,581 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-12-11T19:27:23+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">keep going</title><subtitle>java와 spring, 웹부터 백엔드까지 기초를 탄탄히 공부하기 위한 블로그</subtitle><author><name>Your Name</name></author><entry><title type="html">Testposting</title><link href="http://localhost:4000/TestPosting/" rel="alternate" type="text/html" title="Testposting" /><published>2021-12-11T00:00:00+09:00</published><updated>2021-12-11T00:00:00+09:00</updated><id>http://localhost:4000/TestPosting</id><content type="html" xml:base="http://localhost:4000/TestPosting/">&lt;h2 id=&quot;2021-12-11-testpostingmd&quot;&gt;2021-12-11-TestPosting.md&lt;/h2&gt;
-&lt;p&gt;title: “블로그 시작” 
-excerpt: “첫 포스팅 “ 
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-12-12T13:51:32+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">keep going</title><subtitle>java와 spring, 웹부터 백엔드까지 기초를 탄탄히 공부하기 위한 블로그</subtitle><author><name>Your Name</name></author><entry><title type="html"></title><link href="http://localhost:4000/2021-12-12-OOPch4/" rel="alternate" type="text/html" title="" /><published>2021-12-12T13:51:32+09:00</published><updated>2021-12-12T13:51:32+09:00</updated><id>http://localhost:4000/2021-12-12-OOPch4</id><content type="html" xml:base="http://localhost:4000/2021-12-12-OOPch4/">&lt;h3 id=&quot;this-키워드&quot;&gt;&lt;strong&gt;this 키워드&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;: 객체가 자기 자신을 지칭할 때 쓰는 키워드&lt;br /&gt;
+- 객체 변수와 지역 변수 이름이 같을 때 객체 변수를 지칭하기 위한 키워드. (this.객체변수명)&lt;br /&gt;
+- 정적 변수와 지역 변수 이름이 같을 때 정적 변수에 접근하기 위해서는 클래스명을 이용한다. (클래스명.정적변수명)&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;super-키워드&quot;&gt;&lt;strong&gt;super 키워드&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;: 바로 위 상위 클래스의 인스턴스를 지칭&lt;/p&gt;</content><author><name>Your Name</name></author></entry><entry><title type="html">Oopch1</title><link href="http://localhost:4000/OOPch1/" rel="alternate" type="text/html" title="Oopch1" /><published>2021-12-12T00:00:00+09:00</published><updated>2021-12-12T00:00:00+09:00</updated><id>http://localhost:4000/OOPch1</id><content type="html" xml:base="http://localhost:4000/OOPch1/">&lt;hr /&gt;
+&lt;p&gt;title: “스프링을 위한 자바 객체지향 CH1” 
+excerpt: “” 
 last_modified_at: 
 categories:&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;Blog 
+  &lt;li&gt;OOP 
 tags:&lt;/li&gt;
-  &lt;li&gt;content&lt;/li&gt;
-  &lt;li&gt;Blog 
- —&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;포스팅-테스트&quot;&gt;포스팅 테스트&lt;/h1&gt;</content><author><name>Your Name</name></author><summary type="html">2021-12-11-TestPosting.md title: “블로그 시작” excerpt: “첫 포스팅 “ last_modified_at: categories: Blog tags: content Blog —</summary></entry></feed>
+&lt;hr /&gt;
+&lt;h1 id=&quot;스프링을-위한-자바-객체지향&quot;&gt;스프링을 위한 자바 객체지향&lt;/h1&gt;
+
+&lt;h2 id=&quot;객체지향의-출현-과정&quot;&gt;객체지향의 출현 과정&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;기계어&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;기계어는 기계가 이해하는 유일한 언어이다.&lt;br /&gt;
+2진 숫자인 0과 1로만 표현된다.&lt;br /&gt;
+&lt;strong&gt;기계어 코드는 CPU에 따라 다르다.&lt;/strong&gt;&lt;/p&gt;
+  &lt;blockquote&gt;
+    &lt;p&gt;ex) 애드삭에서 1과 3을 더하는 코드는&lt;br /&gt;
+01010101 00000001 00001001&lt;br /&gt;
+유니박에서 1과 3을 더하는 코드는&lt;br /&gt;
+11011100 00011000 10011000&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;애드삭(EDSAC) : 모리스 월키스 제작. 2진법을 적용한 세계 최초의 프로그램 내장 방식 전자계산기&lt;/li&gt;
+      &lt;li&gt;유니박(UNIVAC) : 최초의 상업용 컴퓨터&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;어셈블리어&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;기계어의 명령들을 일상 용어로 표현하고 그것을 기계가 알 수 있는 기계어로 번역하면 어떨까?라는 생각으로 개발되었다.&lt;br /&gt;
+어셈블리 : 기계어 명령어와 일상 용어를 일대일로 매칭하는 코드표&lt;br /&gt;
+&lt;strong&gt;But&lt;/strong&gt; CUP마다 기계어가 다르기 대문에 CPU별로 각자의 어셈블리어도 달랐다.&lt;br /&gt;
+어셈블러 : 어셈블리어를 기계어로 번역해 주는 소프트웨어&lt;/p&gt;
+  &lt;blockquote&gt;
+    &lt;p&gt;ex) 애드삭 - 더하기를 의미하는 기계어 01010101에 매칭되는 어셈블리어는 ADD&lt;br /&gt;
+유니박 - 더하기를 의미하는 기계어 11011100에 매칭되는 어셈블리어 PLUS&lt;/p&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;어셈블리어가 생겨서 일상용어로 프로그래밍 할 수 있어 편해졌지만 유니박, 애드삭 CPU마다 어셈블리어가 달라서 번거롭다.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;c언어&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;c언어 등장으로 어셈블리어의 CPU마다 소스 파일을 만들어야 했던 멀티소스에서 각 CPU에 맞는 컴파일러만 있으면 하나의 소스 파일만 있으면 되는 싱글소스로 더욱 편해졌다.(이식성이 좋다)&lt;/p&gt;
+  &lt;blockquote&gt;
+    &lt;p&gt;One Source : 하나의 C 소스 파일만 작성&lt;br /&gt;
+Multi Object : 기종마다 기계어 목적 파일을 생성&lt;br /&gt;
+Use Anywhere : 모든 컴퓨터에서 실행 가능&lt;/p&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;java&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;C++은 main()함수 클래스와 별개로 존재 가능하다.&lt;br /&gt;
+이에 반해 java는 진정한 객체 지향 언어로, 객체(클래스)없이 존재할 수 없다. 
+기종마다 컴파일러가 따로 있어야 했던 c언어와 달리 운영체제 별 다른 컴파일러가 필요 없다. (기종용 JRE 세팅 필요)&lt;/p&gt;
+  &lt;blockquote&gt;
+    &lt;p&gt;Write Once Use Anywhere&lt;/p&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt; &lt;/th&gt;
+      &lt;th&gt;어셈블리어&lt;/th&gt;
+      &lt;th&gt;C&lt;/th&gt;
+      &lt;th&gt;자바&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;개발자의 코딩&lt;/td&gt;
+      &lt;td&gt;일상 단어 사용&lt;/td&gt;
+      &lt;td&gt;수학적 기호 사용&lt;/td&gt;
+      &lt;td&gt;수학적 기호 사용&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;소스파일&lt;/td&gt;
+      &lt;td&gt;기종마다 하나씩&lt;/td&gt;
+      &lt;td&gt;기종이 몇 개든 단 하나&lt;/td&gt;
+      &lt;td&gt;기종이 몇 개든 단 하나&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;목적파일&lt;/td&gt;
+      &lt;td&gt;어셈블러로 기계어 생성&lt;/td&gt;
+      &lt;td&gt;컴파일러로 해당 운영체제용 기계어 생성&lt;/td&gt;
+      &lt;td&gt;기종이 몇개든 단 하나의 JVM용 기계어 생성&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;기계어 비교&lt;/td&gt;
+      &lt;td&gt;기계어랑 1:1대응&lt;/td&gt;
+      &lt;td&gt;기계어와 m:n대응&lt;/td&gt;
+      &lt;td&gt;기계어와 m:n대응&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;비고&lt;/td&gt;
+      &lt;td&gt;기종별 어셈블러 필요&lt;/td&gt;
+      &lt;td&gt;기종별 컴파일러 필요&lt;/td&gt;
+      &lt;td&gt;단 하나의 컴파일러만 필요 기종별 JRE 세팅 필요(한번만 설치해주면 됨)&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;스프링과-객체지향&quot;&gt;스프링과 객체지향&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;객체 지향의 4대 특성 필요성&lt;/strong&gt;&lt;br /&gt;
+CBD(Component Based Development)나 SOA(Service Oriented Architecture)와 같은 방법론, 사상과 달리 자바나 C#같은 제품은 제조사가 생각하는 객체지향 방법론의 사상 및 개념이숨어들어 있다. 객체 지향은 긴 세월 속에 정제되어 거의 모든 이가 동의하는 &lt;strong&gt;객체 지향 4대 특성, 객체 지향 설계 5원칙, 객체 지향의 베스트 프랙티스 모음인 디자인 패턴&lt;/strong&gt; 등의 개념이 정립됐다. 우리가 자바라고 하는 제품을, C#이라고 하는 제품을 온전히 쓰려면 제품 속에 녹아 있는 객체 지향 4대 특성은 제대로 이해해야 한다.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;강력한 스프링 프레임워크&lt;/strong&gt;&lt;br /&gt;
+스프링 프레임워크는 개념을 명확히 알지 못해서, 혹은 너무 방대해서 어렵다고 느껴질 수 있다. 스프링 프레임워크를 이해하려면 그 개념인 OOP를 알아야한다. 또한 방대하지만 일관성 있는 방식으로 쌓아올린 제품이므로 단순하고 유연하며 쉽고 강력하다.&lt;/p&gt;</content><author><name>Your Name</name></author><summary type="html">title: “스프링을 위한 자바 객체지향 CH1” excerpt: “” last_modified_at: categories: OOP tags:</summary></entry><entry><title type="html">Oopch2</title><link href="http://localhost:4000/OOPch2/" rel="alternate" type="text/html" title="Oopch2" /><published>2021-12-12T00:00:00+09:00</published><updated>2021-12-12T00:00:00+09:00</updated><id>http://localhost:4000/OOPch2</id><content type="html" xml:base="http://localhost:4000/OOPch2/">&lt;hr /&gt;
+&lt;p&gt;title: “스프링을 위한 자바 객체지향 CH2” 
+excerpt: “” 
+last_modified_at: 
+categories:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;OOP 
+tags:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;h1 id=&quot;2자바와-절차적구조적프로그래밍&quot;&gt;&lt;strong&gt;2.자바와 절차적/구조적프로그래밍&lt;/strong&gt;&lt;/h1&gt;
+
+&lt;h3 id=&quot;자바-프로그램의-개발과-구동&quot;&gt;&lt;strong&gt;자바 프로그램의 개발과 구동&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;|현실세계|자바세계||&lt;br /&gt;
+|——|——|—-|&lt;br /&gt;
+|소프트웨어 개발 도구|JDK|JVM용 소프트웨어 개발 도구|&lt;br /&gt;
+|운영체제|JRE|JVM용 OS|&lt;br /&gt;
+|하드웨어(컴퓨터)|JVM|가상의 컴퓨터|&lt;/p&gt;
+
+&lt;p&gt;-JDK : Java Development Kit (자바 개발 도구)&lt;br /&gt;
+-JRE : Java Runtime Environment(자바 실행 환경)&lt;br /&gt;
+-JVM : Java Virtual Machin(자바 가상 기계)&lt;/p&gt;
+
+&lt;p&gt;기존 C언어는 OS마다 배포설치파일을 따로 준비 해야했다면, 자바는 JRE가 대신 포함한다.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;자바에-존재하는-절차적구조적-프로그래밍의-유산&quot;&gt;&lt;strong&gt;자바에 존재하는 절차적/구조적 프로그래밍의 유산&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;객체 지향 프로그래밍은 절차적/구조적 프로그래밍의 어깨를 딛고 있다. 따라서 객체 지향 언어를 이해 하는 데 절차적/구조적 프로그래밍을 아는 것은 큰 도움이 된다.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;구조적프로그래밍(=함수사용,goto자제)의 목적&lt;/strong&gt;&lt;br /&gt;
+-중복코드관리용이&lt;br /&gt;
+-논리를 함수 단위로 분할(이해하기 쉬운코드작성)&lt;br /&gt;
+-전역변수보다 지역변수 권장&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;함수와 메서드의 차이점&lt;/strong&gt;&lt;br /&gt;
+같은 기능을 하지만 함수는 클래스나 객체와 아무 관계가 없다. 반면 메서드는 반드시 클래스 정의 안에 존재해야 한다.&lt;/p&gt;
+
+&lt;p&gt;-&amp;gt; 객체 지향을 이해하기 위해 절차적/구조적 프로그래밍 즉, goto문 사용하지 않고 함수를 사용하는 프로그래밍을 먼저 이해하자.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;다시보는-main메서드-메서드-스택-프레임&quot;&gt;&lt;strong&gt;다시보는 main()메서드: 메서드 스택 프레임&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;다음과 같은 main()메서드가 실행될 때 메모리 상태는 그림과 같다.&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Tmemory&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
+        &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;pringln&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello OPP&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;_Tmemory.jpeg&quot; alt=&quot;_Tmemory&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;메서드 실행되기까지의 과정&lt;/strong&gt;&lt;br /&gt;
+&amp;gt; JRE는 프로그램이 실행된느 시작점인 main()메서드가 있는지 확인&lt;br /&gt;
+&amp;gt; main()메서드 확인되면 사전 준비 착수(JVM에 전원을 넣어 부팅)&lt;br /&gt;
+&amp;gt; 부팅된 JVM은 목적 파일(소스코드)을 받아 실행&lt;br /&gt;
+&amp;gt; (전처리과정:JVM이 맨 먼저 하는 일) 모든 자바 프로그램이 반드시 포함하게 되는 패키지인 java.lang을 T메모리 스태틱 영역에 가져다 놓음&lt;br /&gt;
+&amp;gt; JVM은 개발자가 작성한 모든 클래스와 임포트 패키지 역시 스태틱 영역에 가져다 놓음&lt;br /&gt;
+&amp;gt; 중괄호 만날때마다 스택 프레임이 하나씩 생김&lt;br /&gt;
+&amp;gt; 메서드의 인자 args를 저장할 변수 공간을 스택 프레임 맨 밑에 확보&lt;br /&gt;
+&amp;gt; 닫는 중괄호 만나면 스택 프레임 소멸&lt;br /&gt;
+&amp;gt; main()메서드가 끝나면 JRE는 JVM을 종료하고 JRE자체도 운영체제 상의 메모리에서 사라짐&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;블록-구문과-메모리-블록-스택-프레임&quot;&gt;&lt;strong&gt;블록 구문과 메모리: 블록 스택 프레임&lt;/strong&gt;&lt;/h3&gt;
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;BlockStack&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
+        &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
+            &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;m&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+        &lt;span class=&quot;c1&quot;&gt;//k = m+p;&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;  
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;_BlockStack.jpeg&quot; alt=&quot;_BlockStack&quot; /&gt;&lt;br /&gt;
+다음 그림은 7번째 줄을 실행한 후 T 메모리이다.&lt;br /&gt;
+6번째 줄 실행 후 i  변수에 저장된 값이 10인지 참이면 if ~ else 블록 중 위의 블록이 실행된다. 그리고 여는 중괄호를 만다면 스택 프레임이 시작된다고 했는데 &lt;strong&gt;여기서 만들어지는 스택 프레임은 메서드 스택 프레임이 아니라 if 문, 그것도 참인 블록의 스택 프레임이다.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;-&amp;gt; 14번째 줄 주석을 해제하면 아래와 긑은 컴파일러 오류가 발생한다.&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;m cannot be resolved to a variable&lt;br /&gt;
+c cannot be resolved to a variable&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;그 이유는 지역 변수는 스택 프레임 안에서 벗어나지 못하기 때문이다. 따라서 스택 프레임이 사라지면 함께 사라진다.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;지역-변수와-메모리-스택-프레임에-갇혔어요&quot;&gt;&lt;strong&gt;지역 변수와 메모리: 스택 프레임에 갇혔어요!&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;변수는 T메모리 중 어디있을까?&lt;br /&gt;
+스태틱 영역, 스택 영역, 힙 영역  ‘세 군데 모두’다.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;지역변수 : 스택 영역, 스택 프레임 안에서 일생을 보낸다.&lt;/li&gt;
+  &lt;li&gt;글래스 멤버 변수 : 스태틱 영역, 스태틱 영역에 한번 자리 잡으면 JVM이 종료될 때까지 고정된 상태로 그 자리르 지킨다.&lt;/li&gt;
+  &lt;li&gt;객체 멤버 변수 : 힙 영역, 객체와 함께 가비지 컬렉터라고 하는 힙 메모리 회수기에 의해 일생을 마치게 된다.&lt;br /&gt;
+따라서 위의 코드에서 if 스택 프레임 안의 변수를 외부에서 접근하지 못하였다.&lt;br /&gt;
+반면, 내부 스택 프레임에서 외부 스택 프레임의 변수에 접근하는 것은 가능하다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;메서드-호출과-메모리-메서드-스택-프레임2&quot;&gt;&lt;strong&gt;메서드 호출과 메모리: 메서드 스택 프레임2&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;다음은 메서드 호출 과정에서의 T메모리 구조이다.&lt;/p&gt;
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;StackPrame&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
+        &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+        &lt;span class=&quot;n&quot;&gt;m&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;square&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;square&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
+        &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+        &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;25&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+        &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;_StackPrame.jpeg&quot; alt=&quot;_StackPrame&quot; /&gt;&lt;br /&gt;
+square()메서드 스택 프레임에는 반환값을 저장할 변수 공간이 맨 아래, 그 다음으로 인자를 저장할 변수 공간, 마지막으로 메서드의 지역 변수가 자리 잡는다.&lt;br /&gt;
+&lt;strong&gt;main()메서드의 k와 square()메서드의 k는 이름만 같지 서로 별도의 변수 공간이다.&lt;/strong&gt; -&amp;gt; Call By Value&lt;br /&gt;
+17 line 닫는 중괄호 만나면 반환 값을 돌려주면서 스택에서 사라진다.&lt;/p&gt;
+
+&lt;p&gt;* 메서드를 블랙박스화 : 입력 값들과 반환 값들에 의해서만 메서드 사이에서 값이 전달될 뿐 서로 내부의 지역 변수를 볼 수 없다.&lt;/p&gt;
+
+&lt;p&gt;* sqare()메서드 실행 명령문에서 main()메서드의 지역 변수 참조할 수 없는 이유&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;메서드는 서로의 고유 공간인데 무단 침입하면 문제를 유발할 수 있기 때문&lt;/li&gt;
+  &lt;li&gt;포인터 문제 : square()메서드에서 main()메서드 내부의 지역변수에 접근하려면 위치를 명확히 알아야한다. 즉, 포인터인 메모리 주소 값을 이해해야 하는데 자바가 환영받은 이유 중 하나가 포인터가 없다는 것이다.&lt;/li&gt;
+  &lt;li&gt;메서드는 다양한 곳으로부터 호출된다. 호춫ㄹ하는 메서드 내부의 지역 변수를 호출당하는 쪽에서 제어할 수 있게 만들려면 포인터를 주고받아야 한다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;* 메서드 사이에 값을 전달하거나 반환하는 방법은 메서드의 인자와 반환값으로만 가능하다. 전역 변수도 있지만 가급적 쓰지 않는 것이 좋다.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;전역-변수와-메모리-전역-변수-쓰지-말라니까요&quot;&gt;&lt;strong&gt;전역 변수와 메모리: 전역 변수 쓰지 말라니까요!&lt;/strong&gt;&lt;/h3&gt;
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;StaticVal&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;share&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;share&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;55&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+        &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fun&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+
+        &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;share&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;fun&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;share&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;_StaticVal.jpeg&quot; alt=&quot;_StaticVal&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;* 스택 프레임에 종속적인 지역 변수&lt;br /&gt;
+* 스택 프레임에 독립적인 지역 변수&lt;br /&gt;
+! 여러 메서드에서 전역 변수의 값을 변경하기 시작하면 전역 변수에 저장된 값을 파악하기 쉽지 않기 때문에 읽기 전용으로 값을 공유해서 전역 상수로 쓰는 것 외에는  피하는 게  좋다.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;멀티-스레드--멀티-프로세스의-이해&quot;&gt;&lt;strong&gt;멀티 스레드 / 멀티 프로세스의 이해&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;_Multi_Thread_Process.jpeg&quot; alt=&quot;_Multi_Thread_Process&quot; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;멀티 스레드 : 스택 영역을 스레드 개수만큼 분할해서 사용&lt;br /&gt;
+-다른 스레드의 스택 영역에 접근할 수 없지만 스태틱 영역과 힙 영역은 공유해서 사용&lt;br /&gt;
+-웹 프로그래밍에서 열심히 쓰임&lt;/li&gt;
+  &lt;li&gt;멀티 프로세스 : 다수의 T메모리 구조&lt;br /&gt;
+-프로세스마다 각자 고유의 공간이므로 서로 참조 불가
+-다른 프로세스 메모리 절대 침범할 수 업슨ㄴ 메모리 안전한 구조&lt;br /&gt;
+-메모리 사용량이 큼&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;정리&quot;&gt;&lt;strong&gt;정리&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;객체 지향이 발전하면서 절차적/구조적 프로그램이이 좋지 않은 방식이라 하지만 객체 지향은 절차적/구조적 프로그래밍의 유산을 간직하고 있다.(연산자, 제어문, 메모리 관리체계 등등..)&lt;/li&gt;
+  &lt;li&gt;사실 C++도 C언어 부정한 것이 아니라 계승한 것이다.&lt;/li&gt;
+  &lt;li&gt;따라서 프로그래머는 절차적/구조적 프로그래밍 기법도 잘 알고 있어야 한다.&lt;/li&gt;
+  &lt;li&gt;구조적 프로그래밍의 특징은 함수인데 객체 지향 프로그래머도 메서드 작성에 대한 지혜를 구조적 프로그래밍에서 배워 와야 한다.&lt;/li&gt;
+  &lt;li&gt;메서드를 만들 때 순서도나 의사코드를 작성하는 것이 좋다.(NS 다이어그램도 좋은 방법)&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Your Name</name></author><summary type="html">title: “스프링을 위한 자바 객체지향 CH2” excerpt: “” last_modified_at: categories: OOP tags:</summary></entry><entry><title type="html">Oopch3</title><link href="http://localhost:4000/OOPch3/" rel="alternate" type="text/html" title="Oopch3" /><published>2021-12-12T00:00:00+09:00</published><updated>2021-12-12T00:00:00+09:00</updated><id>http://localhost:4000/OOPch3</id><content type="html" xml:base="http://localhost:4000/OOPch3/">&lt;hr /&gt;
+&lt;p&gt;title: “스프링을 위한 자바 객체지향 CH3” 
+excerpt: “” 
+last_modified_at: 
+categories:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;OOP 
+tags:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;h1 id=&quot;3장-자바와-객체지향&quot;&gt;3장. 자바와 객체지향&lt;/h1&gt;
+&lt;h3 id=&quot;객체-지향은-인간-지향이다&quot;&gt;&lt;strong&gt;객체 지향은 인간 지향이다&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;어셈블리어 &amp;gt; c &amp;gt; c++ &amp;gt; java 로 언어가 로우레벨에서 하이레벨로 발전한 것은 인간을 배려하기 위한 과정이다.&lt;/li&gt;
+  &lt;li&gt;절차적/구조적 프로그래밍은 특히 포인터가 인간이 이해하기 힘든 부분이다.&lt;/li&gt;
+  &lt;li&gt;인간이 쉽게 개발할 수 있도록 &lt;strong&gt;기계 종속적 개발에서 벗어나 현실세계 처럼 프로그래밍하자&lt;/strong&gt;라는 생각에서 객체지향이 시작된다.&lt;/li&gt;
+  &lt;li&gt;함수는 코드를 논리적인 단위로 구분하고 분할해서 정복하기 위함으로 만들어 졌다면,&lt;/li&gt;
+  &lt;li&gt;객체지향은 우리가 주변에서 사물을 인지하는 방식대로 프로그래밍하자는 것에서 출발한다.&lt;/li&gt;
+  &lt;li&gt;사물은 1.객체이며 2.고유하고 3.속성을 가지고 4.행위를 한다.&lt;/li&gt;
+  &lt;li&gt;인간의 인지법은 사물을 분류(class)해서 이해한다.&lt;/li&gt;
+  &lt;li&gt;객체지향 이전에는 속성과 메서드를 객체 단위로 묶지 않고 속성, 메서드 따로 분리했다.&lt;/li&gt;
+  &lt;li&gt;객체 지향에서는 우리가 주변에서 실제 사물을 인지 및 사고하는 방식대로 객체 단위의 프로그래밍이 가능하다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;객체-지향의-4대-특성---캡-상추다&quot;&gt;&lt;strong&gt;객체 지향의 4대 특성 - 캡! 상추다&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;캡 - 캡슐화(Encapsulation): 정보 은닉(information hiding)&lt;br /&gt;
+상 - 상속(Inheritance): 재사용&lt;br /&gt;
+추 - 추상화(Abstraction): 모델링&lt;br /&gt;
+다 - 다형성(Polymorphism): 사용 편의&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;추상화-모델링&quot;&gt;&lt;strong&gt;추상화: 모델링&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;추상&lt;/strong&gt; : 여러 가지 사물이나 개념에서 &lt;strong&gt;공통되는 특성&lt;/strong&gt;이나 속성 따위를 &lt;strong&gt;추출&lt;/strong&gt;하여 파악하는 작용.&lt;br /&gt;
+&lt;strong&gt;추상화&lt;/strong&gt; : 구체적인 것을 분해해서 관찰자가 &lt;u&gt;관심 있는 특성&lt;/u&gt;(애플리케이션 경계, 컨텍스트)만 가지고 재조합하는 것.(=모델링)&lt;br /&gt;
+&lt;strong&gt;객체&lt;/strong&gt; : 세상에 존재하는 유일무이한 사물(속성과 기능 가짐)&lt;br /&gt;
+&lt;strong&gt;클래스&lt;/strong&gt; : 분류, 집합. 같은 속성과 기능을 가진 객체를 총칭하는 개념&lt;br /&gt;
+&lt;strong&gt;모델&lt;/strong&gt; : 목적에 맞게 관심 있는 특성만을 추출해서 표현. 추상화를 통해 실제 사물을 단순하게 묘사하는 것. (ex. 지구본, 태양계 모델)&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;OOP의 추상화는 모델링이다.&lt;br /&gt;
+클래스 설계에서 추상화가 사용된다.&lt;br /&gt;
+클래스 설계를 위해서는 애플리케이션 경계부터 정해야 한다.&lt;br /&gt;
+객체 지향에서 추상화의 결과는 클래스다.&lt;br /&gt;
+java는  class키워드로 객체 지향의 추상화를 지원하고 있다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;추상화 과정&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;애플리케이션 경계 설정&lt;br /&gt;
+쥐 캐릭터 관리 프로그램 개발&lt;/li&gt;
+  &lt;li&gt;공통 특성 뽑아내기&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;|객체명|미키마우스|제리|&lt;br /&gt;
+|—-|——–|—|&lt;br /&gt;
+|속성들|성명:미키마우스&amp;lt;/br&amp;gt;국적:미국&amp;lt;/br&amp;gt;나이:87&amp;lt;/br&amp;gt;종교:무교&amp;lt;/br&amp;gt;신장:70cm&amp;lt;/br&amp;gt;체중:11.5kg&amp;lt;/br&amp;gt;애완동물:플루토&amp;lt;/br&amp;gt;여자친구:미니마우스&amp;lt;/br&amp;gt;꼬리:1개&amp;lt;/br&amp;gt;…|성명:제리&amp;lt;/br&amp;gt;국적:미국&amp;lt;/br&amp;gt;나이:75&amp;lt;/br&amp;gt;종교:기독교&amp;lt;/br&amp;gt;친구:톰&amp;lt;/br&amp;gt;여자친구:null&amp;lt;/br&amp;gt;꼬리:1개&amp;lt;/br&amp;gt;…|&lt;br /&gt;
+|행위들|달리다()&amp;lt;/br&amp;gt;먹다()&amp;lt;/br&amp;gt;휘파람불다()&amp;lt;/br&amp;gt;데이트하다()&amp;lt;/br&amp;gt;울다()&amp;lt;/br&amp;gt;…|달리다()&amp;lt;/br&amp;gt;먹다()&amp;lt;/br&amp;gt;장난치다()&amp;lt;/br&amp;gt;…|&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;관심 있는 특성 뽑아내기
+:추상화의 결과물은 모델이다. 모델은 java에서 클래스로 표현된다.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;_logicalClass.jpeg&quot; alt=&quot;_logicalClass&quot; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;논리적 설계를 물리적 설계로 바꾸기&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;_physicalClass.jpeg&quot; alt=&quot;_physicalClass&quot; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;코드로 변환&lt;br /&gt;
+~~~java&lt;br /&gt;
+package abstraction01;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;public class Mouse{
+    public String name;
+    public int age;
+    public int countOfTail;&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;public void sing(){
+    System.out/pringln(name+&quot;찍찍&quot;)
+} } ~~~  
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;테스트&lt;br /&gt;
+~~~java
+package abstraction01;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;public class MouseDriver{
+    public static void main(String[] args){
+        Mouse mickey = new Mouse();
+        mickey.name = “미키”;
+        mickey.age = 85;
+        mickey.ountOfTail = 1;&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    mickey.sing();
+
+    mickey = null;
+
+    Mouse jerry = new Mouse();
+    jerry.name = &quot;제리&quot;;
+    jerry.age = 73;
+    jerry.ountOfTail = 1;
+
+    jerry.sing();
+} } ~~~   ![_MouseClass](_MouseClass.jpeg) -스태틱영역 : 스태팅은 &quot;고정된&quot;이라는 의미로 스태틱 영역에 올라간 정보는 main() 메서드가 시작되기 전에 올라가서 main() 메서드가 종료된 후에 내려올 정도로 단단히 고정돼 있다.   -스택 영역 : 스택 자료구조로 메서드들이 입출되는 여역이다.   -힙영역 : 여러 객체등의 대용량 자료를 저장하는 영역이다.  
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;클래스멤버/객체멤버, static멤버/인스턴스멤버&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;클래스의 모든 객체가 하나의 속성에 모두 같은 값을 가지고 있다면 해당 속성 변수에 static을 붙여서 클래스 멤버 속성으로 만드는 것이 효율적이다. 접근은 ‘클래스.클래스멤버변수’로 할 수 있다.&lt;/li&gt;
+  &lt;li&gt;메서드 또한 static을 붙이면 클래스(정적) 멤버 메서드로 쓸 수 있다.&lt;/li&gt;
+  &lt;li&gt;정적 메서드는 객체들의 존재 여부에 관계없이 쓸 수 있는 메서드다.(ex. main()메서드)&lt;/li&gt;
+  &lt;li&gt;정적 멤버들은 객체가 아닌 클래스에 속해 있다.&lt;/li&gt;
+  &lt;li&gt;UML 표기법에서 정적 멤버는 밑줄을 사용해 표시한다.&lt;/li&gt;
+  &lt;li&gt;정적 속성은 클래스가 학당될 때 메모리 공간이 확보 된다.(객체 속성은 객체가 생성될때 할당)&lt;/li&gt;
+  &lt;li&gt;지역 변수와 달리 클래스 속성과 객체 속성은 별도로 초기화 해주지 않아도 정수형은 0, 부동소수점형은 0.0, 논리형은 false, 객체는 null로 초기화 된다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&amp;lt;클래스멤버(정적멤버) vs 객체멤버&amp;gt;
+|클래스 멤버|객체멤버|&lt;br /&gt;
+|——–|——-|&lt;br /&gt;
+|static||&lt;br /&gt;
+|- 클래스멤버속성&amp;lt;/br&amp;gt;- 클레스 멤버 메서드|- 객체 멤버 속성&amp;lt;/br&amp;gt;- 객체 멤버 메서드|&lt;/p&gt;
+
+&lt;변수 유형=&quot;&quot;&gt;
+|이름|다른 이름|사는 곳|
+|---|-------|-----|  
+|static 변수|클래스[멤버]속성, 정적 변수, 정적 속성, ...|스태틱 영역|  
+|인스턴스 변수|객체[멤버]속성, 객체 변수, ...|힙 영역|  
+|local 변수|지역 변수|스택영역|  
+
+-----------------   
+
+### **상속: 재사용+확장**  
+객체 지향에서의 상속은 상위 클래스의 특성을 하위 클래스에서 상속 **(특성 상속)** 하고 거기에 더해 필요한 **특성을 추가**, 즉 확장해서 사용할 수 있다는 의미다.  
+상위 클래스 쪽으로 갈수록 추상화, 일반화  
+하위 클래스 쪽으로 갈수록 구체화, 특수화  
+하위 클래스는 상위 클래스다. (고래는 포유류다.)  
+하위 클래스 is a kind of 상위 클래스 (펭귄 is a kind of 조류)
+
+- 상속의 강력함  
+-상위클래스에서만 한번 정의하면 모든 하위 클래스들이 사용할 수 있다.  
+-상위클래스 타입 변수에 하위 클래스 타입 객체를 초기화 할 수 있다.  
+
+- 상속과 인터페이스  
+-인터페이스 : 구현 클래스 is able to 인터페이스 (구현 클래스는 인터페이스할 수 있다 / 고래는 헤엄 칠 수 있다)  
+
+- 상속과 메모리  
+~~~java
+package ingeritance;
+
+public class Animal {
+    public String name;
+
+    public void showName(){
+        System.out.println(&quot;안녕 나는 %s야. 반가워\n&quot;,name);
+    }
+}
+~~~   
+~~~java
+package inheritance;
+
+public class Penguin extends Animal{
+    public String habitat;
+
+    public void showHabitat(){
+        System.out.println(&quot;%s는 %s에 살아 \n&quot;,name, habitat);
+    }
+}
+~~~
+~~~java
+package inheritance;
+
+public class Driverp{
+    public static void main(Stirng[] args){
+        Penguin pororo = new Penguin();
+
+        pororo.name = &quot;뽀로로&quot;;
+        pororo.habitat = &quot;남극&quot;;
+
+        pororo.showName();
+        pororo.showHabitat();
+
+        Animal pingu = new Penguin();
+
+        pingu.name = &quot;핑구&quot;;
+        //pingu.habitat = &quot;EBS&quot;;
+
+        pingu.showName();
+        //pingu.showHabitat();
+
+        //Penguin happyfeet = new Animal();
+    }
+}
+~~~
+13번째 줄 
+![_Inheritance](_Inheritance.jpeg)
+- Penquin 클래스의 인스턴스만 힙 영역이 생긴 게 아니라 Animal 클래스의 인스턴스도 함께 힙 영역에 생긴다.  
+\&amp;gt; 하위 클래스의 인스턴스가 생성될 때 상위 클래스의 인스턴스도 함께 생성된다. (모든 클래스의 최상의 클래스, Object클래스의 인스턴스도 함께 생성)  
+- pingu 객체 참조 변수는 사실 펭귄이면서 자신이 펭귄이라는 사실은 모르고 동물이라는 것만 인식하고 있다.  
+\&amp;gt; 펭귄 서식지 속성과 메서드를 사용할 수 없다.  
+\&amp;gt; 명시적 형변환 연산(Casting), 암묵적 형변환(Promotion)  
+
+### **다형성: 사용편의성**  
+- 오버라이딩 : 같은 메서드 이름, 같은 인자 목록으로 상위 클래스의 메서드를 재정의 (ride : 올라타다)  
+- 오버로딩 : 같은 메서드 이름, 다른 인자 목록으로 다수의 메서드를 중복 정의 (load : 적재하다)  
+
+! 상위 클래스 타입의 객체 참조 변수를 사용하더라도 하위 클래스에서 오버라이딩한 메서드가 호출된다.   
+
+### **캡슐화: 정보은닉**  
+- private : 해당 클래스에서만 접근 가능 (해당 객체의 public 메소드를 통해서만 접근)  
+- default : 해당 패키지에서만 접근 가능  
+- protected : 동일 패키지의 클래스, 해당 클래스를 상속받은 외부 패키지의 클래스에서 접근 가능  
+- public : 어떤 클래스에서라도 접근 가능  
+
+\* 상속을 받지 않았다면 객체 멤버는 객체를 생성한 후 객체 참조 변수를 이요해 접근해야 한다.  
+\* 정적 멤버는 **클래스명.정적멤버** 형식으로 접근하는 것을 권장한다.  
+
+&lt;정적 멤버의=&quot;&quot; 접근=&quot;&quot; 방법=&quot;&quot;&gt;  
+
+||ClassA|같은 패키지|다른 패키지|  
+|-|----|--------|---------|  
+|ClassA.pubSt|O|상속 : O&amp;lt;/br&amp;gt;no상속 : O|상속 : O&amp;lt;/br&amp;gt;no상속 : O|  
+|pubSt|O|상속 : O&amp;lt;/br&amp;gt;no상속 : X|상속 : O&amp;lt;/br&amp;gt;no상속 : X|  
+|this.pubSt|O|상속 : O&amp;lt;/br&amp;gt;no상속 : X|상속 : O&amp;lt;/br&amp;gt;no상속 : X|  
+
+------------  
+
+### **참조 변수의 복사**  
+기본 자료형은 CallByValue형색으로 값만 **복사.**  
+객체 참조 변수는 주소를 **복사.**  
+\&amp;gt; 기본 자료형 변수는 저장하고 있는 값을 그 값 자체로 해석,  
+객체 참조 변수는 저장하고 있는 값을 주소로 해석  
+&quot;결국은 변수가 가진 값이 그대로 복사된다&quot;
+
+
+-------  
+참고자료 : 김종민 저서 &quot;스프링 입문을 위한 자바 객체 지향의 원리와 이해&quot;
+&lt;/정적&gt;&lt;/변수&gt;</content><author><name>Your Name</name></author><summary type="html">title: “스프링을 위한 자바 객체지향 CH3” excerpt: “” last_modified_at: categories: OOP tags:</summary></entry><entry><title type="html">Testposting</title><link href="http://localhost:4000/TestPosting/" rel="alternate" type="text/html" title="Testposting" /><published>2021-12-11T00:00:00+09:00</published><updated>2021-12-11T00:00:00+09:00</updated><id>http://localhost:4000/TestPosting</id><content type="html" xml:base="http://localhost:4000/TestPosting/">2021-12-11-TestPosting.md
+--- 
+title: &quot;블로그 시작&quot; 
+excerpt: &quot;첫 포스팅 &quot; 
+last_modified_at: 
+categories:
+ - Blog 
+tags:
+ - content
+ - Blog 
+ ---
+
+# 포스팅 테스트</content><author><name>Your Name</name></author><summary type="html">2021-12-11-TestPosting.md title: “블로그 시작” excerpt: “첫 포스팅 “ last_modified_at: categories: Blog tags: content Blog —</summary></entry></feed>
