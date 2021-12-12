@@ -13,16 +13,5 @@ main:
 
    - title: "Home"
      url: https://kyung-dev.github.io
-   - title: "category"
+   - title: "about"
      url: /category/
-
-breadcrumbs: true  # disabled by default
-breadcrumb_home_label : "Home"
-breadcrumb_separator  : "/"
-
-docs:
-  - title: Spring
-    children:
-      - title: "Object Oriented Programing"
-        url: oop/
-        category: "oop"
