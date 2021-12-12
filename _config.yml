@@ -228,6 +228,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-archives #카테고리 적용을 위해
 
 # mimic GitHub Pages with --safe
 whitelist:
