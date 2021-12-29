@@ -34,16 +34,16 @@ main:
 
 # documentation links
 docs:
-  - title: Getting Started
+  - title: 스프링을 위한 객체지향 정리
     children:
-      - title: "Quick-Start Guide"
-        url: /docs/quick-start-guide/
-      - title: "Structure"
-        url: /docs/structure/
-      - title: "Installation"
-        url: /docs/installation/
-      - title: "Upgrading"
-        url: /docs/upgrading/
+      - title: "oop 1"
+        url: /_posts/OOPch1/
+      - title: "oop 2"
+        url: /_posts/OOPch2/
+      - title: "oop 3"
+        url: /_posts/OOPch3/
+      - title: "oop4"
+        url: /_posts/OOPch4/
   - title: Customization
     children:
       - title: "Configuration"

@@ -13,7 +13,7 @@ main:
 
    - title: "Home"
      url: https://kyung-dev.github.io
-   - title: "about"
+   - title: "Category"
      url: /category/
 
 docs:
