@@ -16,7 +16,7 @@ categories:
 - 일정  
 
 |1주차(1/3~1/9)|내용|학습일|
-|---|---|---|
+|---|:---:|---|
 ||**Hello, 코틀린!**||
 |:heavy_check_mark:|OT|2022.1.2(일)|
 |:white_check_mark:|코틀린을 왜 배워야 할까?||
@@ -40,7 +40,7 @@ categories:
 <br>  
 
 |3주차(1/17~1/23)|내용|학습일|
-|:---|:---:|---|
+|---|:---:|---|
 ||**코틀린 프로그래밍 기본 2**||
 |:white_check_mark:|OT||
 |:white_check_mark:|객체지향의 기본||
@@ -51,7 +51,7 @@ categories:
 <br>  
 
 |4주차(1/24~1/30)|내용|학습일|
-|:---|:---:|---|
+|---|:---:|---|
 |:white_check_mark:|컬렉션||
 |:white_check_mark:|동시성 프로그래밍||
 |:white_check_mark:|Final Projects||
