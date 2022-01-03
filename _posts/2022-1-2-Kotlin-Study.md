@@ -19,9 +19,9 @@ categories:
 |:---:|:---:|:---:|
 ||**Hello, 코틀린!**||
 |:heavy_check_mark:|OT|2022.1.2(일)|
-|:white_check_mark:|코틀린을 왜 배워야 할까?||
-|:white_check_mark:|코틀린의 매력을 알아볼까요?||
-|:white_check_mark:|프로그래밍 언어에 대한 경험담||
+|:heavy_check_mark:|코틀린을 왜 배워야 할까?||
+|:heavy_check_mark:|코틀린의 매력을 알아볼까요?||
+|:heavy_check_mark:|프로그래밍 언어에 대한 경험담||
 ||**코틀린 프로그래밍 기본 1**||
 |:white_check_mark:|OT||
 |:white_check_mark:|코틀린의 기본을 익혀요!||
