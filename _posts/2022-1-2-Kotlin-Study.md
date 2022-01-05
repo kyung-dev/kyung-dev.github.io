@@ -23,7 +23,7 @@ categories:
 |:heavy_check_mark:|코틀린의 매력을 알아볼까요?|2022.1.3(월)|
 |:heavy_check_mark:|프로그래밍 언어에 대한 경험담|2022.1.3(월)|
 ||**코틀린 프로그래밍 기본 1**||
-|:white_check_mark:|OT||
+|:heavy_check_mark:|OT|2022.1.4(화)|
 |:white_check_mark:|코틀린의 기본을 익혀요!||
 |:white_check_mark:|함수형 프로그래밍이란?||  
 
