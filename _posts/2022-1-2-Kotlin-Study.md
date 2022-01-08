@@ -25,7 +25,7 @@ categories:
 ||**코틀린 프로그래밍 기본 1**||
 |:heavy_check_mark:|OT|2022.1.4(화)|
 |:heavy_check_mark:|코틀린의 기본을 익혀요!|2022.1.5(수)|
-|:white_check_mark:|함수형 프로그래밍이란?||  
+|:heavy_check_mark:|함수형 프로그래밍이란?|2022.1.8(토)|  
 
 <br>  
 <br>  
