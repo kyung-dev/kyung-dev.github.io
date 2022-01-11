@@ -32,7 +32,7 @@ categories:
 
 |2주차(1/10~1/16)|내용|학습일|
 |:---:|:---:|:---:|
-|:white_check_mark:|프로그램 흐름의 제어||
+|:heavy_check_mark:|프로그램 흐름의 제어|2022.1.11(화)|
 |:white_check_mark:|코틀린의 표준함수 활용하기||
 |:white_check_mark:|Final Projects||
 
