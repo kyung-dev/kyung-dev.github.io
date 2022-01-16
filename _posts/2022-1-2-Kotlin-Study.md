@@ -34,7 +34,7 @@ categories:
 |:---:|:---:|:---:|
 |:heavy_check_mark:|프로그램 흐름의 제어|2022.1.11(화)|
 |:heavy_check_mark:|코틀린의 표준함수 활용하기|2022.1.15(토)|
-|:heavy_check_mark:|Final Projects||
+|:heavy_check_mark:|Final Projects|2022.1.16(일)|
 
 <br>  
 <br>  
