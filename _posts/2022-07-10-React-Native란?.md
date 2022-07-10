@@ -5,7 +5,9 @@ categories:
 - React Native
 ---
 
-혼자서 조그맣게 어플 제작하는 토이프로젝트를 해보려고 하다가 평소에 얘기로만 듣던 react를 찾아보게 되었습니다.  사용해보기 전에 먼저 알아봅시다!
+혼자서 조그맣게 어플 제작하는 토이프로젝트를 해보려고 하다가 평소에 얘기로만 듣던 react를 찾아보게 되었습니다.  사용해보기 전에 먼저 알아봅시다!  
+
+![react-native](https://user-images.githubusercontent.com/71361688/178140671-f68ce67e-47a8-4fa8-a60f-fdfd699985e9.png)
 
 # React Native란?  
 리액트 네이티브는 페이스북에서 만든 오픈소스 모바일 애플리케이션 프레임워크입니다.    
@@ -26,4 +28,4 @@ categories:
 - JSX
 - react native web버전도 나왔습니다.  
 
-java script도 아직 한번도 써보지 않았고 react도 처음 접해봐서 모르는게 있으면 그때그때 알아가면서 시작해봐야겠습니다.
+java script도 아직 한번도 써보지 않았고 react도 처음 접해봐서 모르는게 있으면 그때그때 알아가면서 시작해봐야겠습니다.  
